@@ -1,0 +1,55 @@
+<html>
+<head>
+    <title>Flicker.js | Web framework for node</title>
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="http://designmodo.github.io/Flat-UI/dist/css/flat-ui.min.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="https://use.fontawesome.com/86aebc3670.js"></script>
+</head>
+<body>
+<div class='container'>
+    <div class='jumbotron'>
+        <div class='logo-area'>
+            <img src="http://i.imgur.com/oCrkCYD.png" alt="Flicker.js Banner" class='logo'/>
+        </div>
+        <h1 class='text-primary text-center'>Flicker.js</h1>
+        <p class='text-center'>Super fast and simple web framework for <a href="https://nodejs.org/">node.js</a></p>
+        <div class='divider-20'></div>
+        <div class='row'>
+            <div class='col-md-4'></div>
+            <div class='col-md-4'>
+                <a target='_blank' href='https://github.com/FlickerStudio/flickerjs'><button class='btn btn-block btn-primary btn-lg'><i class='fa fa-github'></i>  Fork me On Github</button></a>
+            </div>
+            <div class='col-md-4'></div>
+        </div>
+    </div>
+    <div class='jumbotron'>
+        <h3>Install</h3>
+        <p>Via NPM:</p>
+        <pre><code>$ npm install flickerjs </code></pre>
+
+        <h3>Basic usage</h3>
+        <p>You can generate a new Flicker.js app with one command:</p>
+        <pre><code>$ flickerjs myapp </code></pre>
+        <p>or:</p>
+        <pre><code>$ flickerjs myapp /mydir</code></pre>
+        <p>a simple application using flicker.js: </p>
+        <pre><code>
+    const flicker = require('flicker');
+    var app = flicker();
+    app
+        .add({
+            url: '/',
+            method: 'GET',
+            handler: (req, res, next) => {
+                res.send("Hello World");
+            }
+        })
+        .listen(3000);
+        </code></pre>
+    </div>
+</div>
+</body>
+</html>

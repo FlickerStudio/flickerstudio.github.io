@@ -1,0 +1,27 @@
+
+body{
+    background: #48C9B0 !important;
+}
+
+.logo{
+    max-width: 200px;
+    max-height:200px;
+}
+.jumbotron {
+    margin-top: 80px;
+    border-top: 5px solid #DDD;
+    box-shadow: 6px 8px 0 rgba(0,0,0,0.04);
+}
+
+.logo-area{
+    display: flex;
+    justify-content: space-around;
+    flow-wrap: wrap;
+
+}
+.divider{
+    padding: 10px 0;
+}
+.divider-20{
+    padding: 20px 0;
+}
